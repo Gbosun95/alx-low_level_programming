@@ -1,12 +1,14 @@
-#include <stdio.h>
- 
+#include<stdio.h>
+
 /**
 
- * main - Entry point
+ * main - Run main function
 
  *
 
- * Return: Always 0 (Success)
+ * Description: Run printf multiple times to print size of different types
+
+ * Return: Return 0 to exit function
 
  */
 
@@ -14,17 +16,30 @@ int main(void)
 
 {
 
-	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	int i;
 
-	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	char c;
 
-	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	long int l;
 
-	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	long long int ll;
 
-	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	float f;
+
+
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
+
+	printf("Size of a long long int: %lu byte(s)\n",
+
+	       (unsigned long)sizeof(ll));
+
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+
 
 	return (0);
 
 }
-
