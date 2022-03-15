@@ -1,7 +1,7 @@
 #include  "main.h"
  * main - entry point
  * Description: print _putchar.
- * Returin
+ * Return 0 sucess
 
 int main(void)
 {
