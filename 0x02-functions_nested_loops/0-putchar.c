@@ -1,10 +1,9 @@
-
 #include  "main.h"
 
 /**
  * main - ssda
- * Description: print
- * Return 0 sucess
+ * Description: print putchar and space line
+ * Return: 0 sucess
  */
 
 int main(void)
