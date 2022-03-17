@@ -1,9 +1,15 @@
 #include "main.h"
 
 /**
- * print_last_digit - last digit
+
+ * _abs - computes the absolute value of an integer
+
+ * @ab: the value to print
+
  *
- * @n: The int to print * Return: Returns last digit
+
+ * Return: the absolute value of an integer.
+
  */
 
 int _abs(int ab)
@@ -15,4 +21,5 @@ int _abs(int ab)
 		ab = ab * -1;
 
 	return (ab);
+
 }
