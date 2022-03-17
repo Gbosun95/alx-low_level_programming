@@ -1,13 +1,10 @@
-#include "main.h"
-
 #include <stdio.h>
-
-#include <math.h>
 
 
 /**
  * main - main block
- * Description: Print the sum of all multiples of 3 or 5 below 1024.
+ * Description: Print the first 50 fibonacci numbers, starting with 1 and 2.
+ * Numbers must be coma and space separated.
  * Return: 0
  */
 
@@ -15,19 +12,47 @@ int main(void)
 
 {
 
-	int i = 1;
+	int count = 2;
 
-	int total = 0;
+	long int i = 1, j = 2;
 
-	while (i < 1024)
+	long int k;
+
+
+	printf("%lu, ", i);
+
+	while (count <= 50)
+
 	{
-		if (i % 3 == 0)
-			total += i;
-		else if (i % 5 == 0)
-			total += i;
 
-		i++;
-	{
-	printf("%d\n", total);
+		if (count == 50)
+
+		{
+
+			printf("%lu\n", j);
+
+		}
+
+		else
+
+		{
+
+			printf("%lu, ", j);
+
+		}
+
+
+		k = j;
+
+		j += i;
+
+		i = k;
+
+		count++;
+
+	}
+
+
 	return (0);
+
 }
