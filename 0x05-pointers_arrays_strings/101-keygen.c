@@ -4,10 +4,11 @@
 
 #include <time.h>
 
+
 /**
  * main - random password generator for 101-crackme
  *
- * Return: always 0
+ * Return: always 
  */
 
 int main(void)
@@ -70,4 +71,6 @@ int main(void)
 	p[i] = '\0';
 
 	printf("%s", p);
+
+	return (0);
 }
