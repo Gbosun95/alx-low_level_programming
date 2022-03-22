@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * puts2 - function with one argument
  * @str: char type pointer
@@ -16,7 +15,7 @@ void puts2(char *str)
 	int i = 0;
 
 
-	while (*(str + i) != '\0')
+	while (str[i] != '\0')
 
 	{
 
@@ -24,7 +23,7 @@ void puts2(char *str)
 
 		{
 
-			_putchar(*(str + i));
+			_putchar(str[i]);
 
 		}
 
