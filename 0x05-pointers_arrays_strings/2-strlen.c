@@ -1,25 +1,30 @@
 #include "main.h"
 
+
 /**
- * swap_int - function with two int type pointer argument
- * @a: 1st argument int type
- * @b: 2nd argument int type
+ * _strlen - function with 1 argument
+ * @s: char type pointer
  *
- * Description: Using pointer to change value of a and b
- * Return: void
+ * Description: strlen similiar function to return lengt
+ * Return: string
  */
 
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 
 {
 
-	int tmp;
+	int i;
 
 
-	tmp = *a;
+	i = 0;
 
-	*a = *b;
+	while (*(s + i) != '\0')
 
-	*b = tmp;
+	{
 
+		i++;
+
+	}
+
+	return (i);
 }
