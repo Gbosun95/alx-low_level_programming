@@ -1,30 +1,24 @@
-20 lines (18 sloc)  310 Bytes
 #include "main.h"
 
 /**
- * *_memset - fills memory with a constant byte.
- * @n: number of bytes.
- * @b: constant byte.
- * @s: pointer.
+ * _memset - function that fills memory with a constant byte.
  *
- * Return: a pointer to memory area s.
+ * @s: mamory area to return
+ * @b: constant byte
+ * @n: size of bytes
+ * Return: char
  */
+
 
 char *_memset(char *s, char b, unsigned int n)
 
 {
+	unsigned int i = 0;
 
-	unsigned int i;
-
-
-	for (i = 0; i < n; i++)
-
+	while (i < n)
 	{
-
-		s[i] = b;
-
+		*(s + i) = b;
+		i += 1;
 	}
-
 	return (s);
-
 }
